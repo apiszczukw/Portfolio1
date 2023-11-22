@@ -2137,6 +2137,7 @@
     <Content Include="Zasoby\fontawesome-free-6.4.2-web\svgs\solid\z.svg" />
     <Content Include="Zasoby\Grafiki\logo.jfif" />
     <Content Include="Zasoby\Grafiki\logo2.jpg" />
+    <Content Include="Zasoby\script.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />

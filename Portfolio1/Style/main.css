@@ -23,15 +23,70 @@ body {
     font-family: var(--bodyfont);
     color: var(--fontcolor);
     background-color: var(--backgroundcolor);
+    margin: 0;
+    line-height: 1.75;
 }
 
 .navbar {
-    background-color: blue;
+    /*background-color: blue;*/
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .nav-center {
-    background-color: red;
+    /*background-color: red;*/
     width: 90vw;
+}
+
+.nav-header {
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    cursor: pointer;
+    background-color: var(--primary-600);
+    color: white;
+    border: transparent;
+    padding: 0.4rem 0.75rem;
+}
+
+.nav-header > img {
+    height: 5rem;
+}
+
+.nav-btn > i {
+    font-size: 1.25rem;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+
+    height: 0;
+    overflow: hidden;
+}
+
+.nav-link {
+    text-align: center;
+    color: var(--fontcolor);
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--primary-500);
+    letter-spacing: 0.1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: var(--primary-300);
+}
+
+.show-links {
+    height: 313.95px;
 }
