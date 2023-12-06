@@ -17,6 +17,7 @@
     /* deklaracja zmiennych dla czcionek */
     --bodyfont: 'Oswald', sans-serif;
     --headerfont: 'Glass Antiqua', cursive;
+    --specialfont: 'Black Ops One', sans-serif;
 }
 
 body {
@@ -54,7 +55,7 @@ body {
     padding: 0.4rem 0.75rem;
 }
 
-.nav-header > img {
+.nav-header img {
     height: 5rem;
 }
 
@@ -151,4 +152,66 @@ a {
 .main-page {
     background-color: var(--primary-700);
     min-height: calc(100vh - 10rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 90vw;
+}
+
+div[class|='welcome'] {
+    font-size: 2rem;
+    color: var(--primary-600);
+    font-family: var(--specialfont);
+    position: relative;
+    display: inline-block;
+}
+
+    div[class|='welcome']::after {
+        content: attr(data-loading-text);
+        color: var(--primary-200);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0%;
+        overflow: hidden;
+        animation-name: loading;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }
+
+    .welcome::after {
+        animation-duration: 2s;
+    }
+
+    .welcome-name::after {
+        animation-delay: 2s;
+        animation-duration: 13s;
+    }
+
+@keyframes loading {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+/* CSS dla PROJEKTY */
+.pic {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 150px;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.project {
+    flex: 1;
 }
