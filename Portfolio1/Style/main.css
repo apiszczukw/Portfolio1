@@ -150,7 +150,7 @@ a {
 }
 
 .main-page {
-    background-color: var(--primary-700);
+    /*background-color: var(--primary-700);*/
     min-height: calc(100vh - 10rem);
     display: flex;
     justify-content: center;
@@ -210,8 +210,19 @@ div[class|='welcome'] {
 .projects {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
 }
 
 .project {
     flex: 1;
+    padding: 0 2rem;
 }
+
+b {
+    margin-right: 1.5rem;
+}
+/* do zrzutu projektów na koniec:tiny.pl/csq5g */
+
+/* wytyczne do podstrony CV oraz kontakt */
+/* tiny.pl/csqj3 */
